@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--HEAD-->
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Datos Planetarios</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<!--HEAD-->
+
+<!--BODY-->
+<body>
+    <!--HEADER-->
+    <header class="site-header">
+        <div class="header-inner">
+            <h1 class="titulo">Datos Planetarios del Sistema Solar</h1>
+            <img class="logo-sistema" src="Imagenes/solarsys_scale.jpg" alt="Escala del sistema solar">
+        </div>
+        
+        <div class="search-wrap">
+            <div class="search-box">
+                <input id="search-input" type="text" placeholder="introducir el nombre del planeta (ej: Tierra)"/>
+                <button id="search-btn" type="button">Buscar</button>
+            </div>
+            <p id="search-feedback" class="feedback" aria-live="polite"></p>
+        </div>
+    </header>
+    <!--HEADER-->
+
+<!--NAVIGATION BAR-->
+<nav class="main-nav">
+    <ul class="nav-list">
+        <li><a href="index.html" id="nav-inicio">Inicio</a></li>
+        <li><a href="sistemasolar.html">Sistema Solar</a></li>
+        <li><a href="unidadastronomica.html">Unidad Astronómica</a></li>
+        <li class="nav-dropdown">
+            <span class="nav-link">Planetas ▾</span>
+            <ul class="dropdown">
+                <li data-planeta="mercurio">Mercurio</li>
+                <li data-planeta="venus">Venus</li>
+                <li data-planeta="tierra">Tierra</li>
+                <li data-planeta="marte">Marte</li>
+                <li data-planeta="jupiter">Júpiter</li>
+                <li data-planeta="saturno">Saturno</li>
+                <li data-planeta="urano">Urano</li>
+                <li data-planeta="neptuno">Neptuno</li>
+            </ul>
+        </li>
+        <li><a href="galeria.html">Galería</a></li>
+    </ul>
+</nav>
+<!--NAVIGATION BAR-->
+<!--MAIN-->
+<main class="main">
+        <article class="keywords">
+            <p>Opciones disponibles : Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano, Neptuno</p>
+        </article>
+        <section id="planet-info" class="planet-info" aria-hidden="true">
+            <div class="planet-table card">
+                <table>
+                    <tbody>
+                        <tr><td class="label">Planeta :</td><td id="p-nombre"></td> </tr>
+                        <tr><td class="label">Distancia del Sol :</td><td id="p-distancia"></td></tr>
+                        <tr><td class="label">Diámetro :</td><td id="p-diametro"></td></tr>
+                        <tr><td class="label">Masa Relativa :</td><td id="p-masa"></td></tr>
+                        <tr><td class="label">Periodo Orbital :</td><td id="p-orbita"></td></tr>
+                        <tr><td class="label">Periodo de Rotación :</td><td id="p-rotacion"></td></tr>
+                        <tr><td class="label">Descubrimiento :</td><td id="p-descubrimiento"></td></tr>
+                        <tr><td class="label">Composición Planetaria :</td><td id="p-composicion"></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="img-back card">
+                <img id="planetImage" src="" alt="imagen del planeta" class="planet-img">
+                <div class="gallery-dots" id="galleryDots"></div>
+                <p id="planetImageDesc" class="image-description"></p>
+                <p id="creditoimagen" class="imagecredit"></p>
+            </div>
+            <div id="imagenModal" class="modal">
+                <div class="modal-content-box">
+                    <span class="close">&times;</span>
+                    
+                    <img alt="imagen en grande" class="modal-img" id="modalImg">
+                    
+                    <a id="downloadBtn" class="download-btn" download>
+                        Descargar Imagen
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--MAIN-->
+
+    <!--FOOTER-->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            
+            <div class="footer-block">
+                <h3> Desarrollo Web<br>2026.</h3>
+                <p>© 2026 Engel Montes</p>
+                <img class="footerImage" src="Imagenes/footerlogo.png" alt="imagen del footer">
+            </div>
+
+            <div class="footer-block">
+                <h3>Contacto</h3>
+                <p>Email: <span>angelmonrodrig17@gmail.com</span></p>
+                <p>whatsApp: <span>+504 97649850</span></p>
+                <img class="caesar" src="Imagenes/fortiorinfirmumsubicit.png" alt="imagen de Caesar">
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER-->
+
+    
+    <script src="script.js" defer></script>
+</body>
+</html>

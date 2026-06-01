@@ -1,0 +1,473 @@
+/* se usa para un reset ligero*/
+* {box-sizing: border-box;}
+html,body { height:100%; margin:0; font-family: sytem-ui, -apple-system, "Segoe UI", Roboto, }
+
+
+
+/*Este es el HEADER*/
+.site-header{
+    padding:20px;
+    background: linear-gradient(180deg,#000 0%, #0b2236 100%);
+    color: #fff;
+    height:200px;
+}
+.header-inner {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:70px;
+    max-width:1100px;
+    margin: 0 auto;
+    padding-bottom:12px;
+}
+.titulo {
+    font-size:55px;
+    margin:0px;
+    background:#000;
+    padding:10px 16px;
+    border-radius:10px;
+    letter-spacing: 10px;
+    font-family: 'Inter-Bureau';
+}
+.logo-sistema {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    border:3px solid rgba(255,255,255,0.12);
+    margin-left: auto;
+}
+
+/**NAVIGATION BAR*/
+.main-nav {
+    background:#000;
+    border-top: 2px solid #000000;
+    border-bottom: 3px solid  #000000;
+}
+
+.nav-list {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style:none;
+    margin: 0;
+    padding: 1px 0;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list a,
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    cursor:pointer;
+    padding: 2px 14px;
+    font-family: Creato Display;
+}
+
+.nav-list a:hover,
+.nav-link:hover {
+    background: #740505;
+    border-radius: 6px;
+}
+.dropdown {
+    display: none;
+    position:absolute;
+    top: 26px;
+    left: 0;
+    background: #000;
+    border: 1px solid #222;
+    list-style: none;
+    padding: 8px 0;
+    min-width: 160px;
+    z-index:1000;
+}
+
+.dropdown li {
+    padding: 8px 16px;
+    color:#fff;
+    cursor: pointer;
+    font-family:"Roboto";
+    text-align:center;
+}
+
+.dropdown li:hover {
+    background: #3e3d3d;
+}
+
+.nav-dropdown:hover .dropdown {
+    display: block;
+}
+
+/*BUSQUEDA*/
+.search-wrap {
+    max-width:500px;
+    margin: 35px auto;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    padding:0 10px;
+}
+.search-box {
+    display:flex;
+    gap:12px;
+}
+#search-input {
+    flex:1;
+    padding:10px 12px;
+    border-radius:8px;
+    border:2px solid #222;
+    font-size:1rem;
+}
+#search-btn {
+    background:#111;
+    color:#fff;
+    padding:10px 16px;
+    border-radius:8px;
+    border:none;
+    cursor:pointer;
+    transition: transform .12s ease, background .12s ease;
+}
+#search-btn:hover {transform:translateY(-2px); background:#222;}
+.feedback {
+    text-align: center;
+    color:#7d0000;
+    font-size:6rem;
+    min-height:1.2em;
+    margin:20px 20px;
+    font-family: 'Sangyo';
+}
+
+
+
+/*ESTRUCTURA DEL MAIN*/
+.main {
+    max-width:1100px;
+    margin: 20px auto;
+    padding: 0 10px 40px;
+    display:flex;
+    gap:24px;
+    flex-direction:column;
+}
+
+/*ESTAS SON LAS OPCIONES DISPONIBLES*/
+.keywords {
+    margin: 30px 150px;
+    height:30px;
+    width: 750px;
+    background-color: #000;
+    font-family:Creato Display;
+    color:#fff;
+}
+.keywords p{
+    margin-top: 3px;
+    text-align: center;
+}
+
+/*AREA DE INFORMACION PLANETARIA OCULTA POR DEFECTO*/
+.planet-info {
+    position:relative;
+    z-index: 1;
+    font-family:'Roboto';
+    font-size:1.3rem;
+    display:flex;
+    gap:16px;
+    opacity:0;
+    transform:translateY(8px);
+    transition: opacity .35s ease, transform .35s ease;
+    flex-wrap:wrap; /* allow wrapping so the row doesn't cause horizontal scroll */
+    align-items:flex-start;
+    margin-top:-50px;
+    margin-left: -200px;
+}
+.planet-info.show {
+    opacity:1;
+    transform: translateY(0);
+}
+.card {background:linear-gradient(90deg,#0c0c3d,#000); 
+    padding:14px; 
+    border-radius:8px; 
+    color:#fff;}
+
+
+
+
+
+    /*TABLA CONTENEDORA DE LA INFOMACION PLANETARIA*/
+    /* user-requested fixed table dimensions */
+    table {
+        border-collapse: collapse;
+        width: 900px; /* requested width */
+        height: 300px; /* requested height */
+        max-width: 900px;
+        table-layout: fixed; /* stable columns */
+    }
+
+td{
+    padding:8px 3px; /* tighter spacing */
+    font-size:1.0.rem;
+    border-bottom:1px solid rgb(255, 255, 255);
+    vertical-align:top;
+}
+
+.label {
+    text-align:right;
+    padding-right:8px;
+    width:300px; /* narrower label column so value column has room */
+    font-weight:700;
+    color:#dbe6ff;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+/*ESPACIO PARA LA IMAGEN DEL PLANETA*/
+.img-back{
+    width:550px;
+    height: 387px;
+    display:flex;
+    flex: 0 0 550px;
+    margin-left:930px; /* small gap from the table; reduce to move it left */
+    margin-top: -403px;
+}
+.planet-img {
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:4px;
+    border:2px solid #d01919;
+    cursor:pointer;
+    margin: 10px;
+}
+
+.planet-img.fade {
+    opacity:0;
+}
+.image-description {
+    padding: 10px;
+    margin:236px -160px 0px 5px;
+    text-align: justify;
+    font-family:"Creato Display";
+    color: white;
+    font-size: 20px;
+    position:absolute;
+}
+.imagecredit {
+    display:block;
+    font-size:15px;
+    text-align: justify;
+    margin:20px 20px 0px 250px;
+    font-family:"consolas"
+
+}
+/**ESTOS SON LOS DOTS*/
+.gallery-dots {
+    position: absolute;
+    bottom: 155px;
+    left:1025px;
+}
+
+.gallery-dots span {
+    height:10px;
+    width:10px;
+    margin: 0 5px;
+    background-color:#666;
+    border-radius: 50%;
+    display:inline-block;
+    cursor:pointer;
+}
+.gallery-dots span.active {
+    background-color: #fff;
+}
+
+
+/*FONDO DEL MODAL*/
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+/* CONTENEDOR INTERNO */
+.modal-content-box {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+    margin-top:-300px;
+    margin-left:120px;
+    padding:20px;
+    width:80%;
+    max-width:40vw;
+    max-height:90vh;
+
+
+    background: rgba(7, 3, 61, 0.09);
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,0.25);
+    backdrop-filter:blur(15px);
+    box-shadow:5px 0 20px rgba(0,0,0,0.5);
+    animation: zoomIn 0.3s ease forwards;
+}
+
+.modal-img{
+    display:flex;
+    margin:auto;
+    max-width:100%;
+    max-height:80vh;
+    object-fit:cover;
+    border-radius: 8px;
+    animation:zoom 0.3s ease;
+}
+.download-btn{
+    display:inline-block;
+    margin:3px auto;
+    padding:10px 20px;
+    background:black;
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+    border:1px solid white;
+    transition:0.3s ease;
+
+}
+
+
+
+.download-btn:hover{
+    background:white;
+    color:black;
+}
+
+/*BOTON DE CERRAR*/
+.close {
+    position:absolute;
+    color:white;
+    font-size:30px;
+    right:20px;
+    top:0px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+.close:hover {
+    transform: scale(1.2);
+    }
+
+/*ANIMACIONES */
+
+@keyframes zoomIn {
+    from {transform:scale(0.6); opacity:0;}
+    to {transform:sacle(1); opacity:1;}
+
+}
+
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+
+}
+
+
+
+/*EL FOOTER*/
+.site-footer {
+    color:#f1f1f1;
+    background-color: #000;
+    padding: 3rem 1.5rem;
+    border-top: 1px solid rgba(255, 255,255,0.1);
+}
+
+.footer-inner{
+    margin: 0 auto;
+    max-width:1200px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+}
+
+.footerImage {
+    margin-left: -55px;
+    position: absolute;
+    width:180px;
+    height:50px;
+}
+
+.footer-block h3 {
+    margin-left: -50px;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color:#ffffff;
+    font-family:"Nasalization"
+}
+
+.footer-block p {
+    margin-left: -50px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color:#cccccc;
+    font-family:"Creato Display";
+}
+
+.footer-block span {
+    color:#ffffff;
+}
+
+.caesar {
+    margin:-180px 275px;
+    position:absolute;
+    height:225px;
+    width:450px;
+}
+/*PARA QUE SEA RESPONSIVE EN LOS TELEFONOS */
+@media (mx-width:800px) {
+    .header-inner {
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
+    }
+    .logo-sistema {
+        width:120px;
+        margin-left:0;
+    }
+    .planet-info {
+        flex-direction:column;
+        align-items:center;
+        gap:12px;
+
+    }
+    .img-back {
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+    .img-back img {
+        width:200px;
+        height:200px;
+    }
+    .label {
+        text-align:left;
+        padding-right:6px;
+        width:auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

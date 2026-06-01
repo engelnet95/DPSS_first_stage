@@ -1,0 +1,57 @@
+MERCURY
+{Mariner 10's First Image of Mercury
+NASA's Mariner 10 spacecraft took its first image of Mercury on March 24, 1974. This picture was taken from a distance of 3,340,000 miles (5,380,000 km) from the surface of Mercury. Mariner 10 was the first spacecraft sent to Mercury.
+
+Image Credit: NASA/JPL/USGS}
+
+
+VENUS{Venus From Mariner 10
+As it sped away from Venus in February 1974, NASA's Mariner 10 spacecraft captured this seemingly peaceful view of Venus. But, contrary to its serene appearance, Venus is a world of intense heat, crushing atmospheric pressure and clouds of corrosive acid.
+
+Image Credit: NASA/JPL-Caltech}
+
+URANUS
+{Hubble Images Uranus and Neptune in 2018}
+
+JUPITER 
+{image captured by NASA's Juno spacecraft during the mission's 54th flyby of Jupiter on Sept. 7, 2023} 
+
+
+
+EARTH: Blue Marble by Apollo 17, reprocessed Apollo 17 astronauts shot this iconic "Blue Marble" photo during their coast to the Moon on 7 December 1972. The image has been processed using modern software and techniques.
+
+
+Hoja de estilos 
+
+*{box-sizing: border-box;}
+ *//resume of this = BASELINE
+* { box-sizing: border-box; }
+html,body { height:100%; margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#111; background:#fff; }
+
+The purpose of that CSS snippet is to establish a consistent, modern, and predictable baseline for a webpage's styling and layout. It addresses common browser inconsistencies and sets up the fundamental environment for the rest of the site's design.
+Here is a detailed breakdown of each part:
+* { box-sizing: border-box; }
+This is arguably the most important line for modern CSS layouts.
+Purpose: It changes how browsers calculate the total width and height of elements.
+Without it: By default (content-box), if you set an element's width to 100px, and then add 10px of padding and 1px of border, the actual total width becomes 122px. This makes creating precise layouts (especially grid systems) very difficult.
+With border-box: The padding and border are included inside the specified width. If you set width to 100px, the element will always occupy exactly 100px of space on the screen, regardless of borders or padding. This makes sizing and alignment much more intuitive and predictable.
+html, body { height: 100%; margin: 0; }
+This ensures that the main containers of the page fill the entire viewport.
+height: 100%;:
+The html element takes its height from the browser window (viewport).
+The body element then takes its height from the html element.
+This is crucial if you want a background color to cover the whole screen, or if you plan to use CSS Flexbox or Grid on the body to center content vertically on a single page view.
+margin: 0;:
+Browsers apply default margins to the body element (usually around 8px). This line explicitly removes those default margins, so your content starts exactly at the top-left corner of the browser window.
+font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+This sets a stack of "system fonts".
+Purpose: It tells the browser to use the default, native font that the user's operating system uses for its own interface (e.g., San Francisco on macOS/iOS, Segoe UI on Windows, Roboto on Android/Chrome OS).
+Benefit: This provides the fastest possible text rendering (the user already has the font loaded for their OS) and makes the webpage feel native and integrated with their device.
+color: #111; background: #fff;
+This sets the default text and background colors for the entire document.
+color: #111;: Sets a very dark gray (almost black) as the default text color, ensuring good readability.
+background: #fff;: Sets the background of the entire page to white.
+
+
+
+
