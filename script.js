@@ -12,31 +12,31 @@ const planetas = {
         composicion: "Núcleo de hierro, manto rocoso y corteza delgada.",
         imagenes: [
           {
-          src: "Imagenes/mercury_3.png",
+          src: "Imagenes/dots_images/1_mercurio_dots_images/mercuriodot1.png",
           descripcion:"Mercurio es el planeta más cercano al Sol y el más pequeño del sistema solar. No tiene atmósfera significativa y su superficie está cubierta de cráteres.",
           credito:"Esta imagen fue capturada por la nave espacial Messenger de la NASA el 6 de octubre de 2008, mostrándonos una aproximación del verdadero color de Mercurio tal como lo vería el ojo humano."
           },
 
           {
-          src: "Imagenes/mercuriodot2.png",
+          src: "Imagenes/dots_images/1_mercurio_dots_images/mercuriodot2.png",
           descripcion:"Delta II: un cohete potente y fiable que impulsó la exploración espacial durante décadas. Parte de la familia Delta, fue opción clave para misiones de la NASA, meteorología y los primeros satélites GPS de la USAF, destacando por una impresionante racha de 100 misiones exitosas consecutivas.",
           credito:"El 3 de agosto de 2004, el cohete Boeing Delta II transportó la nave espacial MESSENGER de la NASA, marcando el inicio de una misión destinada a estudiar Mercurio."
           },
 
            {
-          src: "Imagenes/mercuriodot3.png",
+          src: "Imagenes/dots_images/1_mercurio_dots_images/mercuriodot3.png",
           descripcion:"MESSENGER fue la primera nave espacial en orbitar Mercurio. Durante su misión, que concluyó en 2015 con un impacto planeado sobre la superficie del planeta, recolectó más de 277,000 imágenes y datos científicos cruciales sobre la composición y el entorno del planeta más cercano al Sol.",
           credito:"Esta imagen muestra a técnicos del Laboratorio de Física Aplicada de la Universidad Johns Hopkins cuando realizaban los preparativos finales de la nave espacial MESSENGER de la NASA antes de su lanzamiento hacia Mercurio en agosto de 2004"
           },
 
            {
-          src: "Imagenes/mercuriodot4.png",
+          src: "Imagenes/dots_images/1_mercurio_dots_images/mercuriodot4.png",
           descripcion:"El nombre MESSENGER es un acrónimo de MErcury Surface, Space ENvironment, GEochemistry, and Ranging. Además, hace honor al dios romano Mercurio, conocido como el mensajero de los dioses.",
           credito:"Emblema oficial o parche de la misión MESSENGER de la NASA."
           },
 
           {
-          src:  "Imagenes/mercuriodot5.png",
+          src:  "Imagenes/dots_images/1_mercurio_dots_images/mercuriodot5.png",
           descripcion:"Después de cuatro años de estudio orbital, la nave se quedó sin combustible y se estrelló deliberadamente contra la superficie de Mercurio el 30 de abril de 2015, creando un nuevo cráter.",
           credito:"En esta ilustración artística se pueden apreciar componentes críticos para su supervivencia en un entorno extremo."
           },
@@ -55,30 +55,30 @@ const planetas = {
     composicion: "Núcleo de hierro y níquel, atmósfera densa de CO₂.",
     imagenes: [
       {
-      src:"Imagenes/Venus_1_NASA's Mariner 10 spacecraft.jpg",
+      src:"Imagenes/dots_images/2_venus_dots_images/Venus_1_NASA's Mariner 10 spacecraft.jpg",
       descripcion:"Venus es conocido como el planeta hermano de la Tierra debido a su tamaño similar, tiene una atmósfera densa compuesta principalmente de dióxido de carbono, lo que provoca un efecto invernadero extremo.",
       credito:"Mientras la nave espacial Mariner 10 de la NASA realizaba un sobrevuelo de alta velocidad el 5 de febrero de 1974 capturó esta vista aparentemente pacífica de un planeta del tamaño de la Tierra, envuelto en una densa capa de nubes global."
     },
 
     {
-      src:"Imagenes/venusdot2.jpeg",
+      src:"Imagenes/dots_images/2_venus_dots_images/venusdot2.jpeg",
       descripcion:"Mariner 10 fue una misión histórica, ya que se convirtió en la primera nave en visitar dos planetas (Venus y Mercurio).",
       credito:"Este es un diagrama detallado de la sonda espacial Mariner 10, lanzada por la NASA el 3 de noviembre de 1973."
     },
 
     {
-      src:"Imagenes/venusdot3.jpg",
+      src:"Imagenes/dots_images/2_venus_dots_images/venusdot3.jpg",
       descripcion:"La misión Mariner 10 requirió más correcciones de curso que cualquier misión anterior y fue la primera nave espacial en utilizar la atracción gravitacional de un planeta para ayudarla a llegar a otro planeta.",
       credito:"Esta imagen muestra a la sonda espacial Mariner 10, representada en una ilustración digital creada por el JPL-Caltech para mostrar cómo lucen las naves en su entorno operativo.",
     },
     {
-      src:"Imagenes/venusdot4.jpg",
+      src:"Imagenes/dots_images/2_venus_dots_images/venusdot4.jpg",
       descripcion:"En la fotografía se puede apreciar el cohete elevándose sobre una densa nube de humo y fuego generada por la ignición de sus motores. A la derecha, se observa la torre de servicio metálica del complejo de lanzamiento, que proporcionaba acceso y soporte al cohete antes del despegue.",
       credito:"Esta imagen fue tomada en el Complejo de Lanzamiento 36B en Cabo Cañaveral en ella se observa el despegue del cohete Atlas-Centaur llevando consigo la sonda espacial no tripulada Mariner 10 de la NASA.",
     },
 
       {
-      src:"Imagenes/venusdot5.png",
+      src:"Imagenes/dots_images/2_venus_dots_images/venusdot5.png",
       descripcion:"En la fotografía se puede apreciar el cohete elevándose sobre una densa nube de humo y fuego generada por la ignición de sus motores. A la derecha, se observa la torre de servicio metálica del complejo de lanzamiento, que proporcionaba acceso y soporte al cohete antes del despegue.",
       credito:"Durante su misión de dos años, la nave transmitió más de 12,000 imágenes de Mercurio y Venus. La misión terminó en marzo de 1975. Mariner 10 todavía orbita alrededor del sol, aunque sus sistemas electrónicos probablemente hayan sido destruidos por la radiación sola."
     },
@@ -96,30 +96,30 @@ const planetas = {
     composicion: "Núcleo de hierro y níquel, corteza de silicatos y agua.",
     imagenes: [
       {
-      src:"Imagenes/earth_2.webp",
+      src:"Imagenes/dots_images/3_tierra_dots_images/earth_2.webp",
       descripcion:"En la imagen se distingue claramente el continente de África, la Península Arábiga y el casquete polar sur de la Antártida",
       credito:"Esta icónica imagen de la Tierra, conocida mundialmente como La Canica Azul (The Blue Marble), fue capturada el 7 de diciembre de 1972 por la tripulación de la misión Apolo 17."
     },
 
     {
-      src:"Imagenes/earthdot2.png",
+      src:"Imagenes/dots_images/3_tierra_dots_images/earthdot2.png",
       descripcion:"En la fotografía, nuestro planeta aparece como un minúsculo punto de luz (un solo píxel) suspendido en un haz de luz solar dispersada por la cámara de la sonda.",
       credito:"Esta imagen es la famosa fotografía titulada Un Punto Azul Pálido (Pale Blue Dot), fue tomada por la sonda espacial Voyager 1 de la NASA el 14 de febrero de 1990"
     },
 
     {
-      src:"Imagenes/earthdot3.jpg",
+      src:"Imagenes/dots_images/3_tierra_dots_images/earthdot3.jpg",
       descripcion:"La imagen fue tomada mientras el Apolo 8 orbitaba la Luna, siendo la primera vez que seres humanos orbitaban nuestro satélite y veían la Tierra desde esta perspectiva.",
       credito:"Esta imagen es la icónica fotografía conocida como Earthrise (Amanecer de la Tierra). Fue capturada por el astronauta William Anders el 24 de diciembre de 1968, durante la misión Apolo 8 de la NASA.",
     },
     {
-      src:"Imagenes/earthdot4.jpg",
+      src:"Imagenes/dots_images/3_tierra_dots_images/earthdot4.jpg",
       descripcion:"El astronauta estadounidense McCandless utilizó la Unidad de Maniobra Tripulada (MMU), una mochila propulsada por 24 chorros de nitrógeno que le permitía moverse libremente por el espacio sin estar conectado a la nave por cables de seguridad.",
       credito:"Esta impresionante imagen captura al astronauta de la NASA Bruce McCandless II durante la primera caminata espacial sin ataduras de la historia, el 7 de febrero de 1984.",
     },
 
       {
-      src:"Imagenes/eathdot5.jpg",
+      src:"Imagenes/dots_images/3_tierra_dots_images/eathdot5.jpg",
       descripcion:"Este módulo cuenta con siete ventanas que ofrecen una vista panorámica de la Tierra y los cuerpos celestes. Su propósito principal es ayudar en las operaciones robóticas y de acoplamiento, además de servir como observatorio para la tripulación.",
       credito:"El 11 de Septiembre de 2010 la astronauta e ingeniera de vuelo de la 24º expedición de la NASA, Tracy Caldwell Dyson observa la Tierra a través de una ventana desde la cúpula de la Estación Espacial Internacional. La imagen fue un auto-retrato empleando la luz natural."
     },
@@ -137,30 +137,30 @@ const planetas = {
     composicion: "Núcleo de hierro, manto rocoso con hielo en los polos.",
     imagenes: [
       {
-      src:"Imagenes/mars_1.png",
+      src:"Imagenes/dots_images/4_mars_dots_images/mars_1.png",
       descripcion:"El planeta Marte es conocido como el planeta rojo debido a su color característico causado por el óxido de hierro(Fe₂O₃) en su superficie.",
       credito:"Esta imagen fue capturada por el Telescopio Espacial Hubble de la NASA y la ESA el 28 de octubre de 2005, La imagen fue tomada cuando Marte estaba en su punto más cercano a la Tierra, esta proximidad permitió al Hubble capturar detalles de la superficie y la atmósfera con una claridad excepcional. "
     },
 
     {
-      src:"Imagenes/venusdot2.jpeg",
-      descripcion:"Mariner 10 fue una misión histórica, ya que se convirtió en la primera nave en visitar dos planetas (Venus y Mercurio).",
-      credito:"Este es un diagrama detallado de la sonda espacial Mariner 10, lanzada por la NASA el 3 de noviembre de 1973."
-    },
+      src: "Imagenes/dots_images/4_mars_dots_images/marsdot02.jpg",
+    descripcion: "Esta imagen muestra una avalancha de polvo y arena deslizándose por una duna marciana. Los científicos creen que estos desprendimientos pueden ser provocados por cambios estacionales, vibraciones o la inestabilidad natural de los materiales que componen las dunas. El fenómeno demuestra que la superficie de Marte continúa experimentando procesos geológicos activos.",
+    credito: "Esta fotografía fue capturada por la cámara HiRISE (High Resolution Imaging Science Experiment) a bordo del orbitador Mars Reconnaissance Orbiter (MRO) de la NASA. La imagen documenta una avalancha activa en una duna de arena cerca del polo norte marciano, proporcionando evidencia de cambios dinámicos en la superficie del planeta rojo."
+},
 
     {
-      src:"Imagenes/venusdot3.jpg",
+      src:"Imagenes/dots_images/4_mars_dots_images/marsdot3.png",
       descripcion:"La misión Mariner 10 requirió más correcciones de curso que cualquier misión anterior y fue la primera nave espacial en utilizar la atracción gravitacional de un planeta para ayudarla a llegar a otro planeta.",
       credito:"Esta imagen muestra a la sonda espacial Mariner 10, representada en una ilustración digital creada por el JPL-Caltech para mostrar cómo lucen las naves en su entorno operativo.",
     },
     {
-      src:"Imagenes/venusdot4.jpg",
+      src:"Imagenes/dots_images/4_mars_dots_images/marsdot4.jpg",
       descripcion:"En la fotografía se puede apreciar el cohete elevándose sobre una densa nube de humo y fuego generada por la ignición de sus motores. A la derecha, se observa la torre de servicio metálica del complejo de lanzamiento, que proporcionaba acceso y soporte al cohete antes del despegue.",
       credito:"Esta imagen fue tomada en el Complejo de Lanzamiento 36B en Cabo Cañaveral en ella se observa el despegue del cohete Atlas-Centaur llevando consigo la sonda espacial no tripulada Mariner 10 de la NASA.",
     },
 
       {
-      src:"Imagenes/venusdot5.png",
+      src:"Imagenes/dots_images/4_mars_dots_images/marsdot5.gif",
       descripcion:"En la fotografía se puede apreciar el cohete elevándose sobre una densa nube de humo y fuego generada por la ignición de sus motores. A la derecha, se observa la torre de servicio metálica del complejo de lanzamiento, que proporcionaba acceso y soporte al cohete antes del despegue.",
       credito:"Durante su misión de dos años, la nave transmitió más de 12,000 imágenes de Mercurio y Venus. La misión terminó en marzo de 1975. Mariner 10 todavía orbita alrededor del sol, aunque sus sistemas electrónicos probablemente hayan sido destruidos por la radiación sola."
     },
@@ -299,7 +299,10 @@ function ejecutarBusqueda(){
     } else {
       detenerAutoplay();
       galeriaActual = null;
-      imgEL.src = encontrado.img || (encontrado.imagenes ? encontrado.imagenes[0] :  '');
+      imgEL.src = encontrado.img || 
+      (encontrado.imagenes 
+        ? encontrado.imagenes[0].src
+        :  '');
       imgEL.alt = 'imagen de' + encontrado.nombre;
       document.getElementById("galleryDots").style.display = "none";
     }
@@ -328,15 +331,23 @@ function ejecutarBusqueda(){
           dots.style.display = "block";
           imagenes.forEach((_, i) => {
             const dot = document.createElement("span");
-            dot.onclick = () =>{
+            dot.addEventListener("click", () =>{
                cambiarImagen(i);
+
+               detenerAutoplay();
+               iniciarAutoplay();
                /**detenerAutoplay(); USAR ESTO PARA QUE LAS IMAGENES SE DETENGAN AL HACER CLICK */
-            };
+            });
             if (i==0) dot.classList.add("active");
             dots.appendChild(dot);
           });
         }
-        planetImg.src = imagenes[0];
+        planetImg.src = imagenes[0].src;
+
+        document.getElementById("planetImageDesc").textContent = imagenes[0].descripcion;
+
+        creditimg.textContent =
+        imagenes[0].credito;
         iniciarAutoplay(); 
     }
   /**ESTA FUNCION FUE CAMBIADA POR EL BLOQUE DE ABAJO */
@@ -357,16 +368,22 @@ function ejecutarBusqueda(){
 
       setTimeout(( )=> {
         indiceImagen = index;
-        planetImg.src = galeriaActual[indiceImagen];
+        console.log(galeriaActual[indiceImagen]);
+        planetImg.src = galeriaActual[indiceImagen].src;
+
+        document.getElementById("planetImageDesc").textContent= 
+        galeriaActual[indiceImagen].descripcion;
+
+        creditimg.textContent = 
+        galeriaActual[indiceImagen].credito;
 
         document.querySelectorAll(".gallery-dots span")
         .forEach(dot =>dot.classList.remove("active"));
-
-        if (document.querySelectorAll(".gallery-dots span") [index]) {
-          document.querySelectorAll(".gallery-dots span")[index]
+        
+        document.querySelectorAll(".gallery-dots span")[index]
           .classList.add("active");
 
-        }
+        
         planetImg.classList.remove("fade");
       },300);
 
@@ -449,6 +466,8 @@ function manejarSwipe() {
     if (prev < 0) prev = galeriaActual.length -1;
     cambiarImagen(prev);
   }
+
+iniciarAutoplay();
 
 }
 /**DROPDOWN DE LA BARRA DE NAVEGACION */
